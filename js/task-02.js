@@ -13,8 +13,7 @@ const listItems = [];
 for (const ingredient of ingredients) {
   const listItem = document.createElement('li');
   listItem.textContent = ingredient;
-  listItem.classList.add("item")
-  list.appendChild(listItem);
+  listItem.classList.add("item");
   listItem = push(listItem);
 }
 
