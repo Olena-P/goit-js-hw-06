@@ -6,9 +6,10 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const listItems = [];
+
 const list = document.getElementById("ingredients");
 console.log(list);
+const listItems = [];
 for (const ingredient of ingredients) {
   const listItem = document.createElement('li');
   listItem.textContent = ingredient;
