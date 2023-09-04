@@ -6,7 +6,7 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-
+const listItems = [];
 const list = document.getElementById("ingredients");
 console.log(list);
 for (const ingredient of ingredients) {
@@ -14,8 +14,10 @@ for (const ingredient of ingredients) {
   listItem.textContent = ingredient;
   listItem.classList.add("item")
   list.appendChild(listItem);
+  listItem = push(listItem);
 }
 
+list.append(... listItems);
 
 // Завдання 2
 // HTML містить порожній список ul#ingredients.
